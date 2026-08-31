@@ -1,0 +1,129 @@
+:root {
+    --tg_color: #401701;
+    --tg_tamanio: 20px;
+    --txt-giant: 2.5rem;
+    --tm_tamanio: 18px;
+    --bg_principal: #010019;
+    --p_color: #7831FC;
+    --p_tamanio:14px;
+    --navbar-width: 120px;
+    --nb-txt-md:1.2rem;
+    --nb-text_color: #75cfff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  line-height: 1.6; 
+  -webkit-font-smoothing: antialiased; /* Suaviza las fuentes en Mac/iOS */
+  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,system-ui, sans-serif; /* Fuente por defecto moderna */
+  max-width: 100vw; 
+  min-width: 320px; 
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+font: inherit;
+}
+body{
+    background-color: var(--bg_principal);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px;
+    position: relative;
+}
+.navbar_list {
+    display: none;
+    padding: 0;
+    padding: 20px 25px;
+}
+.navbar_list.active{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100%;
+}
+.navbar_list-item{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar_list-item a {
+    font-size: var(--nb-txt-md);
+    color: var(--nb-text_color);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.navbar_list-item a:hover {
+    color: white;
+    text-shadow: #010019 ;
+}
+.navbar_list ul {
+    list-style: none;
+}
+.navbar_list li {
+    margin-bottom: 15px;
+}
+.navbar_logo {
+   width: 70px; 
+}
+#menu_boton {
+    color: antiquewhite;
+    font-size: 4rem;
+    cursor: pointer;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.hero_imagen-titulo{
+    color: #fff;
+    font-size: var(--txt-giant);
+}
+.hero_imagen-parrafo{
+    color: rgb(7, 192, 183);
+    font-size: 1.2rem;
+}
+.imagen_hero {
+    margin: 0 auto;
+    border-radius: 50%;
+    width:  50%;
+    height: auto;
+    transition: transform 0.8s; box-shadow: 0,8s;
+}
+.imagen_hero:hover {
+    transform:translate(10px, 10px );
+    box-shadow:
+    -5px 5px 15px #00FFFF,
+    0 0 15px #FF00FF,
+    5px -5px 15px #7831FC;
+    
+}
+.hero_texto{
+    flex-direction: column;
+}
+.hero_texto-titulo {
+    font-size: 14px;
+    font-family: Press Start 2P;
+}
