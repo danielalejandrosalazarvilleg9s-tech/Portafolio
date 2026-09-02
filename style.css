@@ -40,12 +40,12 @@ font: inherit;
 }
 body{
     background-color: var(--bg_principal);
+    margin: 15px;
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 15px;
     position: relative;
 }
 .navbar_list {
@@ -97,6 +97,9 @@ body{
     align-items: center;
     text-align: center;
 }
+.hero_imagen_ {
+    margin: 20px;
+}
 .hero_imagen-titulo{
     color: #fff;
     font-size: var(--txt-giant);
@@ -105,20 +108,23 @@ body{
     color: rgb(7, 192, 183);
     font-size: 1.2rem;
 }
+
 .imagen_hero {
+    display: block;
     margin: 0 auto;
     border-radius: 50%;
-    width:  50%;
-    height: auto;
-    transition: transform 0.8s; box-shadow: 0,8s;
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover; 
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .imagen_hero:hover {
-    transform:translate(10px, 10px );
+    transform: scale(1.05);
     box-shadow:
-    -5px 5px 15px #00FFFF,
-    0 0 15px #FF00FF,
-    5px -5px 15px #7831FC;
-    
+        -5px 5px 15px #00FFFF,
+        0 0 15px #FF00FF,
+        5px -5px 15px #7831FC;
+    z-index: 10;
 }
 .hero_texto{
     flex-direction: column;
