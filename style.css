@@ -1,11 +1,11 @@
 :root {
-    --tg_color: #401701;
-    --tg_tamanio: 20px;
-    --txt-giant: 2.5rem;
+    --tg_color: #fff;
+    --tg_tamanio: 2rem;
+    --txt-giant: 1.8rem;
     --tm_tamanio: 18px;
     --bg_principal: #010019;
     --p_color: #7831FC;
-    --p_tamanio:14px;
+    --p_tamanio: 1rem;
     --navbar-width: 120px;
     --nb-txt-md:1.2rem;
     --nb-text_color: #75cfff;
@@ -52,7 +52,11 @@ body{
     display: none;
     padding: 0;
     padding: 20px 25px;
+    background-color: #4b2ce8a6;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
+
 .navbar_list.active{
     display: flex;
     flex-direction: column;
@@ -70,7 +74,6 @@ body{
     color: var(--nb-text_color);
     text-decoration: none;
     font-weight: bold;
-
 }
 .navbar_list-item a:hover {
     color: white;
@@ -116,10 +119,11 @@ body{
     width: 250px; 
     height: 250px; 
     object-fit: cover; 
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .imagen_hero:hover {
-    transform: scale(1.05);
+    transform: scale(1.0099);
     box-shadow:
         -5px 5px 15px #00FFFF,
         0 0 15px #FF00FF,
@@ -133,3 +137,72 @@ body{
     font-size: 14px;
     font-family: Press Start 2P;
 }
+#projects {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.Projects_title {
+    color: var(--nb-text_color);
+    font-size: var(--tg_tamanio);
+    font-family: monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+}
+#projects_cards{
+    display: grid;
+    grid-template-columns: 1fr;    
+}
+.projects_cards-card {
+    width: 480px;
+    height: 350px;
+    /* background-color: #5a25a3; */
+    border: 1px solid rgb(0, 115, 255);
+    border-radius: 15px;
+    margin: 6px 0;
+    /* text-align: start; */
+    /* display: flex; Se puede organizar para mejorar la responsibidad con todos sus subatributos */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction:column;
+    align-content: center;
+    padding: 10px;
+}
+.titulo {
+    color: var(--tg_color);
+    font-size: var(--txt-giant);
+}
+
+.projects_cards-card img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.projects_cards-card--parrafo{
+    color: lightblue;
+    font-size: var(--p_tamanio);
+    text-align: start;
+}
+.btn-project {  
+    color: #00FFFF;
+    text-decoration: none;
+    margin-top: auto;
+    font-size: 13px;
+    border: 1px solid rgb(0, 115, 255);
+    border-radius: 15px;
+    padding: 6px;
+    transition: ease-in-out 0.2s;
+}
+.btn-project:hover { 
+    color: var(--bg_principal);
+    background: var(--nb-text_color);
+}
+
+
+
