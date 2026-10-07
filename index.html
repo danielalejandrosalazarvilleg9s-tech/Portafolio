@@ -56,7 +56,7 @@
                 de telefono ni direcciones personales -->
 
                 <li class="navbar_list-item">
-                    <a href="#Contact">Contact</a>
+                    <a href="#Contact" id="openContact">Contact</a>
                 </li>
 
             </ul>
@@ -154,6 +154,34 @@
         </div>
     </section> 
 
+
+    <section class="contact" id="Contact">
+
+        <div class="Contact_ventana_modal">
+
+            <h3 class="Projects_title title_contact">Contact</h3>
+            
+            <form>
+                <label for="name">Nombre</label>
+
+                <input type="text" id="name" placeholder="Tu nombre">
+
+                <label for="email">Email</label>
+
+                <input type="email" id="email" placeholder="Tu email">
+
+                
+                <label for="message">Mensaje</label>
+                
+                <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            
+            <button class="contact_button_cerrar" id="closeContact">Cerrar</button>
+        </div>
+    </section>
     <!-- investigar como el contenido heigth se ajuste dependiendo a la cantidad que tenga dentro -->
 
 

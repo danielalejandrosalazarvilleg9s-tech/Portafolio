@@ -262,3 +262,75 @@ body{
      
 }
 
+
+.contact {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.contact.active {
+    display: flex;
+}
+
+.Contact_ventana_modal {
+    
+    width: 450px;
+    height: auto;
+    background-color: var(--bg_principal);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.Contact_ventana_modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Contact_ventana_modal input,
+.Contact_ventana_modal textarea {
+    padding: 10px;
+    border: 1px solid var(--nb-text_color);
+    border-radius: 10px;
+}
+
+.Contact_ventana_modal label {
+    color: var(--nb-text_color);
+    font-size: var(--p_tamanio);
+}
+
+.Contact_ventana_modal button[type="submit"] {
+    color: #00FFFF;
+    background-color: transparent;
+    border: 1px solid rgb(0, 115, 255);
+    border-radius: 15px;
+    padding: 6px;
+    cursor: pointer;
+    width: auto;
+}
+
+.contact_button_cerrar {
+    color: #00FFFF;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 115, 255);
+    border-radius: 15px;
+    padding: 6px;
+    cursor: pointer;
+    width: auto;
+
+}
+
+.title_contact {
+    margin-top: 0;
+}
+
