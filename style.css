@@ -9,6 +9,10 @@
     --navbar-width: 120px;
     --nb-txt-md:1.2rem;
     --nb-text_color: #75cfff;
+
+}
+html {
+    scroll-behavior: s
 }
 *,
 *::before,
