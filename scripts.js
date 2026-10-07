@@ -23,12 +23,3 @@ closeContact.addEventListener("click", function() {
     contactModal.classList.remove("active");
 });
 
-const contactForm = document.querySelector("form");
-
-contactForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    alert("Mensaje enviado correctamente");
-
-});

@@ -27,7 +27,8 @@ body {
   font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,system-ui, sans-serif; /* Fuente por defecto moderna */
   max-width: 100vw; 
   /* min-width: 480px;  */
-  margin: 0 3px;
+    background-color: var(--bg_principal);
+    margin: 15px;
 }
 img,
 picture,
@@ -43,10 +44,7 @@ textarea,
 select {
 font: inherit;
 }
-body{
-    background-color: var(--bg_principal);
-    margin: 15px;
-}
+
 .navbar {
     display: flex;
     justify-content: space-between;
