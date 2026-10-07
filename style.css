@@ -50,9 +50,8 @@ body{
 }
 .navbar_list {
     display: none;
-    padding: 0;
-    padding: 20px 25px;
-    background-color: #4b2ce8a6;
+    padding: 20px 15px;
+    background-color: #04001682;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
@@ -78,6 +77,7 @@ body{
 .navbar_list-item a:hover {
     color: white;
     text-shadow: #010019 ;
+    text-decoration: underline;
 }
 .navbar_list ul {
     list-style: none;
@@ -137,7 +137,7 @@ body{
     font-size: 14px;
     font-family: Press Start 2P;
 }
-#projects {
+.projects {
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -152,7 +152,7 @@ body{
     font-family: monserrat, Verdana, Geneva, Tahoma, sans-serif;
     text-align: start;
 }
-#projects_cards{
+.projects_cards{
     display: grid;
     grid-template-columns: 1fr;    
 }
@@ -163,14 +163,18 @@ body{
     border: 1px solid rgb(0, 115, 255);
     border-radius: 15px;
     margin: 6px 0;
-    /* text-align: start; */
-    /* display: flex; Se puede organizar para mejorar la responsibidad con todos sus subatributos */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction:column;
     align-content: center;
     padding: 10px;
+    transition: ease-in-out 0.2s;
+
+}
+.projects_cards-card:hover {
+    transform: scale(1.0099);
+    z-index: 10;
 }
 .titulo {
     color: var(--tg_color);
@@ -201,8 +205,49 @@ body{
 }
 .btn-project:hover { 
     color: var(--bg_principal);
-    background: var(--nb-text_color);
+    background: var(--nb-text_color)
 }
 
+/* SECCION DE SKILLS */
+.Projects_title.skills {
+    margin-top: 45px;
+}
+.projects_cards-card.skills_text {
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    height: auto;   
+}
 
+.skills_text-span {
+    color: #00FFFF;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid rgb(0, 115, 255);
+    border-radius: 15px;
+    padding: 6px;
+
+}
+
+#about {
+    margin-top: 45px;
+
+}
+
+.about_text {
+    justify-content: flex-start;
+    height: auto;
+    
+}
+
+.about_text-parrafo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--nb-text_color);
+    font-size: var(--p_tamanio);
+    text-align: start;   
+    padding: 5px;
+     
+}
 
