@@ -288,6 +288,7 @@ body{
     background-color: var(--bg_principal);
     border-radius: 15px;
     padding: 20px;
+    margin: 0 10px;
 }
 
 .Contact_ventana_modal form {
