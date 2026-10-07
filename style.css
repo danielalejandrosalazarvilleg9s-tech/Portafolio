@@ -12,7 +12,7 @@
 
 }
 html {
-    scroll-behavior: s
+    scroll-behavior: smooth;
 }
 *,
 *::before,
