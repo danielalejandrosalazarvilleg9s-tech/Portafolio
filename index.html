@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="src/favicon.png">   
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
 </head>
 
@@ -109,10 +110,9 @@
             <!-- Tarjeta 2 -->
              <div class="projects_cards-card">
                 <img src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calculadora en Python">
-                <h3 class="titulo">Calculadora en Python</h3>
+                <h3 class="titulo">Triki</h3>
                 <p class="projects_cards-card--parrafo">
-                    Calculadora desarrollada en Python para realizar
-                    operaciones matemáticas básicas.
+                    Juego del triki desarrollado en Python, donde juega el usuario contra la computadora, y el primero en hacer una línea de 3 gana.
                 </p>
 
                 <a class="btn-project" href="#">Ver proyecto</a> 
@@ -156,30 +156,74 @@
 
 
     <section class="contact" id="Contact">
-
+        
         <div class="Contact_ventana_modal">
 
-            <h3 class="Projects_title title_contact">Contact</h3>
+            <h4>CONTACTO ----</h4>
             
-            <form>
-                <label for="name">Nombre</label>
+            <h3 class="Projects_title title_contact">
+                Hable<span>mos</span>
+            </h3>
 
-                <input type="text" id="name" placeholder="Tu nombre">
+            <p class="contact_subtitle">
+                ¿Tienes un proyecto en mente?<br>
+                Me encantaría saber de ti.<br>
+                ¡Será un gusto ayudarte!
+            </p>
 
-                <label for="email">Email</label>
+            <div class="projects_cards-card card_input">
+                <form>
+                    <label for="name">
+                        <i class='bx bx-user form_user'></i> 
+                        Nombre
+                    </label>
+                    <input type="text" id="name" placeholder="Daniel Salazar Villegas">
+                </form>
+            </div>
+            
+            <div class="projects_cards-card card_input">
+                <form>
 
-                <input type="email" id="email" placeholder="Tu email">
+                <label for="email">
+                    <i class='bx bx-envelope form_email'></i> 
+                    Email
+                </label>
 
-                
-                <label for="message">Mensaje</label>
-                
-                <textarea id="message" placeholder="Escribe tu mensaje"></textarea>
+                <input type="email" id="email" placeholder="danvilsa@ejemplo.com">
+                </form>
+            </div>
 
-                <button type="submit">Enviar</button>
+            <div class="projects_cards-card card_input">
+                <form>
+                    <label for="message">
+                        <i class="bx bx-message-rounded form_mensaje"></i>
+                            Mensaje
+                        
+                    </label>
+
+                    <textarea id="message" placeholder="Hola, me gustaria saber mas sobre tu trabajo"></textarea>
+
+                </form>
+            </div>
+
+
+                <button class="enviar_boton"  type="submit">
+                    <i class='bx bx-send boton_enviar'></i>
+                    Enviar
+
+                </button>
+
+                <p class="contact_footer">
+                    ───　¡GRACIAS POR TU MENSAJE!　───
+                </p>
+
+                <button class="contact_button_cerrar" id="closeContact">
+                    <i class='bx bx-x'></i>
+                </button>
+
             </form>
 
             
-            <button class="contact_button_cerrar" id="closeContact">Cerrar</button>
         </div>
     </section>
     <!-- investigar como el contenido heigth se ajuste dependiendo a la cantidad que tenga dentro -->

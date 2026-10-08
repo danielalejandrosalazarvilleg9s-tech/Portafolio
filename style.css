@@ -215,9 +215,7 @@ font: inherit;
 }
 
 /* SECCION DE SKILLS */
-.Projects_title.skills {
-    
-}
+
 .projects_cards-card.skills_text {
     flex-direction: row;
     gap: 10px;
@@ -260,6 +258,7 @@ font: inherit;
      
 }
 
+/* ***** Contact Section *****/ 
 
 .contact {
     display: none;
@@ -280,6 +279,7 @@ font: inherit;
 }
 
 .Contact_ventana_modal {
+    position: relative;
     border: 1px solid rgb(0, 115, 255);
     width: 450px;
     height: auto;
@@ -300,6 +300,7 @@ font: inherit;
     padding: 10px;
     border: 1px solid var(--nb-text_color);
     border-radius: 10px;
+    background-color: #010019;
 }
 
 .Contact_ventana_modal label {
@@ -307,22 +308,22 @@ font: inherit;
     font-size: var(--p_tamanio);
 }
 
-.Contact_ventana_modal button[type="submit"] {
-    color: #00FFFF;
-    background-color: transparent;
-    border: 1px solid rgb(0, 115, 255);
-    border-radius: 15px;
-    padding: 6px;
-    cursor: pointer;
-    width: auto;
-}
+
+
+
 
 .contact_button_cerrar {
+    display: flex;
+    top: -50px;
+    right: -15px;
+    position: absolute;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
     color: #00FFFF;
-    margin-top: 10px;
     background-color: transparent;
     border: 1px solid rgb(0, 115, 255);
-    border-radius: 15px;
+    border-radius: 50px;
     padding: 6px;
     cursor: pointer;
     width: auto;
@@ -331,5 +332,106 @@ font: inherit;
 
 .title_contact {
     margin-top: 0;
+    text-align: center;
 }
+
+ 
+.Contact_ventana_modal h4 {
+    color: var(--nb-text_color);
+    font-size: var(--p_tamanio);
+    letter-spacing: 5px;
+    margin: 0 0 8px 0;
+}
+
+.title_contact {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.title_contact span {
+    color: #00ffd5;
+}
+
+.contact_subtitle {
+    color: #a6b8cf;
+    font-size: var(--p_tamanio);
+    line-height: 1.6;
+    margin: 0 0 25px
+
+}
+
+.card_input {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    transition: none;
+}
+.card_input:hover {
+    transform: none;
+}
+
+.card_input input {
+    padding: 12px 0 12px 50px;
+    margin-bottom: 15px;
+    font-size: var(--p_tamanio);
+    color: aliceblue;
+}
+
+.card_input textarea {
+    padding: 12px 0 12px 50px;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: var(--p_tamanio);
+    color: aliceblue;
+}
+
+
+.form_user {
+
+    position: absolute;
+    margin-left: 15px;
+    top: 49%;
+    z-index: 6;
+    font-size: 20px;
+    border-radius: 50px;
+}
+
+.form_email {
+    position: absolute;
+    margin-left: 15px;
+    top: 50%;
+    z-index: 6;
+    font-size: 20px;
+}
+
+.form_mensaje {
+    position: absolute;
+    margin-left: 15px;
+    top: 42%;
+    z-index: 6;
+    font-size: 20px;
+}
+
+.enviar_boton {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0 5px 0 5px;
+    color: #00FFFF;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(0, 115, 255);
+    
+    
+}
+
+.contact_footer {
+    display: flex;
+    color: #00ffd5;
+    justify-content: center;
+}
+
+
+
+
 
