@@ -1,18 +1,17 @@
 :root {
-    --tg_color: #fff;
-    --tg_tamanio: 2rem;
-    --txt-giant: 1.8rem;
-    --tm_tamanio: 18px;
-    --bg_principal: #010019;
-    --p_color: #7831FC;
-    --p_tamanio: 1rem;
-    --navbar-width: 120px;
-    --nb-txt-md:1.2rem;
-    --nb-text_color: #75cfff;
-
+  --tg_color: #fff;
+  --tg_tamanio: 2rem;
+  --txt-giant: 1.8rem;
+  --tm_tamanio: 18px;
+  --bg_principal: #010019;
+  --p_color: #7831fc;
+  --p_tamanio: 1rem;
+  --navbar-width: 120px;
+  --nb-txt-md: 1.2rem;
+  --nb-text_color: #75cfff;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 *,
 *::before,
@@ -22,13 +21,15 @@ html {
   padding: 0;
 }
 body {
-  line-height: 1.6; 
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased; /* Suaviza las fuentes en Mac/iOS */
-  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,system-ui, sans-serif; /* Fuente por defecto moderna */
-  max-width: 100vw; 
+  font-family:
+    Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, system-ui,
+    sans-serif; /* Fuente por defecto moderna */
+  max-width: 100vw;
   /* min-width: 480px;  */
-    background-color: var(--bg_principal);
-    margin: 15px;
+  background-color: var(--bg_principal);
+  margin: 15px;
 }
 img,
 picture,
@@ -42,397 +43,486 @@ input,
 button,
 textarea,
 select {
-font: inherit;
+  font: inherit;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
 }
 .navbar_list {
-    display: none;
-    padding: 20px 15px;
-    background-color: #04001682;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+  display: none;
+  padding: 20px 15px;
+  background-color: #04001682;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.navbar_list.active{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    width: 100%;
-    z-index: 5;
+.navbar_list.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 5;
 }
-.navbar_list-item{
-    display: flex;
-    justify-content: flex-end;
+.navbar_list-item {
+  display: flex;
+  justify-content: flex-end;
 }
 .navbar_list-item a {
-    font-size: var(--nb-txt-md);
-    color: var(--nb-text_color);
-    text-decoration: none;
-    font-weight: bold;
+  font-size: var(--nb-txt-md);
+  color: var(--nb-text_color);
+  text-decoration: none;
+  font-weight: bold;
 }
 .navbar_list-item a:hover {
-    color: white;
-    text-shadow: #010019 ;
-    text-decoration: underline;
+  color: white;
+  text-shadow: #010019;
+  text-decoration: underline;
 }
 .navbar_list ul {
-    list-style: none;
+  list-style: none;
 }
 .navbar_list li {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .navbar_logo {
-   width: 70px; 
+  width: 70px;
 }
 #menu_boton {
-    color: antiquewhite;
-    font-size: 4rem;
-    cursor: pointer;
+  color: antiquewhite;
+  font-size: 4rem;
+  cursor: pointer;
 }
 .hero {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .hero_imagen_ {
-    margin: 20px;
+  margin: 20px;
 }
-.hero_imagen-titulo{
-    color: #fff;
-    font-size: var(--txt-giant);
+.hero_imagen-titulo {
+  color: #fff;
+  font-size: var(--txt-giant);
 }
-.hero_imagen-parrafo{
-    color: rgb(7, 192, 183);
-    font-size: 1.2rem;
+.hero_imagen-parrafo {
+  color: rgb(7, 192, 183);
+  font-size: 1.2rem;
 }
 
 .imagen_hero {
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    width: 250px; 
-    height: 250px; 
-    object-fit: cover; 
-    transition: transform 0.2s, box-shadow 0.2s;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .imagen_hero:hover {
-    transform: scale(1.0099);
-    box-shadow:
-        -5px 5px 15px #00FFFF,
-        0 0 15px #FF00FF,
-        5px -5px 15px #7831FC;
-    z-index: 4;
+  transform: scale(1.0099);
+  box-shadow:
+    -5px 5px 15px #00ffff,
+    0 0 15px #ff00ff,
+    5px -5px 15px #7831fc;
+  z-index: 4;
 }
-.hero_texto{
-    flex-direction: column;
+.hero_texto {
+  flex-direction: column;
 }
 .hero_texto-titulo {
-    font-size: 14px;
-    font-family: Press Start 2P;
+  font-size: 14px;
+  font-family: Press Start 2P;
 }
 .projects {
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 .Projects_title {
-    color: var(--nb-text_color);
-    font-size: var(--tg_tamanio);
-    font-family: monserrat, Verdana, Geneva, Tahoma, sans-serif;
-    text-align: start;
-    margin-top: 45px;
+  color: var(--nb-text_color);
+  font-size: var(--tg_tamanio);
+  font-family: monserrat, Verdana, Geneva, Tahoma, sans-serif;
+  text-align: start;
+  margin-top: 45px;
 }
-.projects_cards{
-    display: grid;
-    grid-template-columns: 1fr;    
-
+.projects_cards {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 .projects_cards-card {
-    width: 100%;
-    height: auto;
-    /* background-color: #5a25a3; */
-    border: 1px solid rgb(0, 115, 255);
-    border-radius: 15px;
-    margin: 8px 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction:column;
-    align-content: center;
-    padding: 10px;
-    transition: ease-in-out 0.2s;
-
+  width: 100%;
+  height: auto;
+  /* background-color: #5a25a3; */
+  border: 1px solid rgb(0, 115, 255);
+  border-radius: 15px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  align-content: center;
+  padding: 10px;
+  transition: ease-in-out 0.2s;
 }
 .projects_cards-card:hover {
-    transform: scale(1.0099);
-    z-index: 10;
+  transform: scale(1.0099);
+  z-index: 10;
 }
 .titulo {
-    color: var(--tg_color);
-    font-size: var(--txt-giant);
+  color: var(--tg_color);
+  font-size: var(--txt-giant);
 }
 
-.projects_cards-card img{
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-radius: 15px;
+.projects_cards-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-.projects_cards-card--parrafo{
-    color: lightblue;
-    font-size: var(--p_tamanio);
-    text-align: start;
+.projects_cards-card--parrafo {
+  color: lightblue;
+  font-size: var(--p_tamanio);
+  text-align: start;
 }
-.btn-project {  
-    color: #00FFFF;
-    text-decoration: none;
-    margin: 5px 0;
-    font-size: 13px;
-    border: 1px solid rgb(0, 115, 255);
-    border-radius: 15px;
-    padding: 6px;
-    transition: ease-in-out 0.2s;
+.btn-project {
+  color: #00ffff;
+  text-decoration: none;
+  margin: 5px 0;
+  font-size: 13px;
+  border: 1px solid rgb(0, 115, 255);
+  border-radius: 15px;
+  padding: 6px;
+  transition: ease-in-out 0.2s;
 }
-.btn-project:hover { 
-    color: var(--bg_principal);
-    background: var(--nb-text_color)
+.btn-project:hover {
+  color: var(--bg_principal);
+  background: var(--nb-text_color);
 }
 
 /* SECCION DE SKILLS */
 
 .projects_cards-card.skills_text {
-    flex-direction: row;
-    gap: 10px;
-    justify-content: flex-start;
-    height: auto;   
+  flex-direction: row;
+  gap: 10px;
+  justify-content: flex-start;
+  height: auto;
 }
 .skills {
-    display: inline-block;
-    width: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 .skills_text-span {
-    color: #00FFFF;
-    text-decoration: none;
-    font-size: 15px;
-    border: 1px solid rgb(0, 115, 255);
-    border-radius: 15px;
-    padding: 6px;
-
+  color: #00ffff;
+  text-decoration: none;
+  font-size: 15px;
+  border: 1px solid rgb(0, 115, 255);
+  border-radius: 15px;
+  padding: 6px;
 }
 
 .about {
-    margin-top: 45px;
+  margin-top: 45px;
 }
 
 .about_text {
-    justify-content: flex-start;
-    height: auto;
-    
+  justify-content: flex-start;
+  height: auto;
 }
 
-.about_text-parrafo{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    color: var(--nb-text_color);
-    font-size: var(--p_tamanio);
-    text-align: start;   
-    padding: 5px;
-     
+.about_text-parrafo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: var(--nb-text_color);
+  font-size: var(--p_tamanio);
+  text-align: start;
+  padding: 5px;
 }
 
-/* ***** Contact Section *****/ 
+/* ***** Contact Section *****/
 
 .contact {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    justify-content: center;
-    align-items: center;
-    z-index: 5;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
 }
 
 .contact.active {
-    display: flex;
+  display: flex;
 }
 
 .Contact_ventana_modal {
-    position: relative;
-    border: 1px solid rgb(0, 115, 255);
-    width: 450px;
-    height: auto;
-    background-color: var(--bg_principal);
-    border-radius: 15px;
-    padding: 20px;
-    margin: 0 10px;
+  position: relative;
+  border: 4px solid rgb(91, 165, 255);
+  width: 450px;
+  height: auto;
+  background-color: var(--bg_principal);
+  box-shadow:
+    #7831fc 0px 0px 30px,
+    #00ffff 0px 0px 20px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 0 10px;
 }
 
-.Contact_ventana_modal form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.Contact_ventana_modal input,
-.Contact_ventana_modal textarea {
-    padding: 10px;
-    border: 1px solid var(--nb-text_color);
-    border-radius: 10px;
-    background-color: #010019;
-}
-
-.Contact_ventana_modal label {
-    color: var(--nb-text_color);
-    font-size: var(--p_tamanio);
-}
-
-
-
-
-
-.contact_button_cerrar {
-    display: flex;
-    top: -50px;
-    right: -3px;
-    position: absolute;
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    color: #00FFFF;
-    background-color: transparent;
-    border: 1px solid rgb(0, 115, 255);
-    border-radius: 50px;
-    padding: 6px;
-    cursor: pointer;
-    width: auto;
-
-}
-
-.title_contact {
-    margin-top: 0;
-    text-align: center;
-}
-
- 
-.Contact_ventana_modal h4 {
-    color: var(--nb-text_color);
-    font-size: var(--p_tamanio);
-    letter-spacing: 5px;
-    margin: 0 0 8px 0;
-}
-
-.title_contact {
-    margin-top: 0;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-
-.title_contact span {
-    color: #00ffd5;
-}
-
-.contact_subtitle {
-    color: #a6b8cf;
-    font-size: var(--p_tamanio);
-    line-height: 1.6;
-    margin: 0 0 25px
-
-}
+/* 
 
 .card_input {
-    position: relative;
-    width: 100%;
-    height: 70%;
-    transition: none;
+  position: relative; corregido - revisa el porqué
+  width: 100%;
+  height: 70%;
+  transition: none;
 }
 .card_input:hover {
-    transform: none;
+  transform: none;
 }
 
 .card_input input {
-    padding: 12px 0 12px 50px;
-    margin-bottom: 15px;
-    font-size: var(--p_tamanio);
-    color: aliceblue;
+  padding: 12px 0 12px 50px;
+  margin-bottom: 15px;
+  font-size: var(--p_tamanio);
+  color: aliceblue;
 }
 
 .card_input textarea {
-    padding: 12px 0 12px 50px;
-    margin-bottom: 15px;
-    outline: none;
-    font-size: var(--p_tamanio);
-    color: aliceblue;
+  padding: 12px 0 12px 50px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: var(--p_tamanio);
+  color: aliceblue;
 }
 
-
 .form_user {
-
-    position: absolute;
-    margin-left: 15px;
-    top: 49%;
-    z-index: 6;
-    font-size: 20px;
-    border-radius: 50px;
+  position: absolute;
+  margin-left: 15px;
+  top: 49%;
+  z-index: 6;
+  font-size: 20px;
+  border-radius: 50px;
 }
 
 .form_email {
-    position: absolute;
-    margin-left: 15px;
-    top: 50%;
-    z-index: 6;
-    font-size: 20px;
+  position: absolute;
+  margin-left: 15px;
+  top: 50%;
+  z-index: 6;
+  font-size: 20px;
 }
 
 .form_mensaje {
-    position: absolute;
-    margin-left: 15px;
-    top: 42%;
-    z-index: 6;
-    font-size: 20px;
+  position: absolute;
+  margin-left: 15px;
+  top: 42%;
+  z-index: 6;
+  font-size: 20px;
 }
 
 .enviar_boton {
-    background-color: transparent;
-    border-radius: 10px;
-    padding: 0 5px 0 5px;
-    color: #00FFFF;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 1px solid rgb(0, 115, 255);
-    
-    
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 0 5px 0 5px;
+  color: #00ffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(0, 115, 255);
+} */
+
+/* --- ESTILOS CORREGIDOS DEL FORMULARIO DE CONTACTO --- */
+.line_contact {
+  color: #00ffff;
+  font-size: var(--p_tamanio);
+  letter-spacing: 0;
 }
+
+/* Preparación del h4 para la línea decorativa */
+.Contact_ventana_modal h4 {
+  display: flex; /* Este recibirá el display: block de abajo */
+  align-items: center;
+  gap: 15px;
+  color: var(--nb-text_color);
+  font-size: var(--p_tamanio);
+  letter-spacing: 5px;
+  margin: 0 0 8px 0;
+}
+
+/* se crea la línea como tal */
+.Contact_ventana_modal h4::after {
+  content: ""; /* Dani, aquí se le asigna un contenido vacío donde va a estar la línea */
+  display: block; /* Esto es para decirle al navegador que lo muestre fijo sobre el que sea display:flex */
+  width: 60px;
+  height: 2px;
+  background-color: var(--nb-text_color);
+}
+
+.Contact_ventana_modal label {
+  color: var(--nb-text_color);
+  font-size: var(--p_tamanio);
+}
+
+.contact_subtitle {
+  color: #a6b8cf;
+  font-size: var(--p_tamanio);
+  line-height: 1.6;
+  margin: 0 0 25px;
+}
+
+.contact_button_cerrar {
+  display: flex;
+  top: -50px;
+  right: -3px;
+  position: absolute;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #00ffff;
+  background-color: transparent;
+  border: 1px solid rgb(0, 115, 255);
+  border-radius: 50px;
+  padding: 6px;
+  cursor: pointer;
+  width: auto;
+}
+
+.title_contact {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: left;
+
+  background: -webkit-linear-gradient(45deg, #00ffff, #7831fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Contact_ventana_modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Contenedor principal de cada campo */
+.card_input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.card_input label {
+  color: var(--nb-text_color);
+  font-size: var(--p_tamanio);
+  font-weight: bold;
+}
+
+/* Contenedor que agrupa el input y su icono */
+.input_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Iconos de los inputs */
+.input_container .form_icon {
+  position: absolute;
+  left: 15px;
+  font-size: 20px;
+  color: var(--nb-text_color);
+  pointer-events: none; /* Evita que el click en el icono bloquee el input */
+}
+
+/* Para que el icono del textarea quede arriba y no en el centro */
+.input_container .textarea_icon {
+  top: 12px;
+}
+
+.input_container input,
+.input_container textarea {
+  width: 100%;
+  padding: 12px 15px 12px 45px; /* El 45px deja espacio para que no se pise el texto con el icono */
+  border: 1px solid var(--nb-text_color);
+  border-radius: 10px;
+  background-color: var(--bg_principal);
+  color: aliceblue;
+  font-size: var(--p_tamanio);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input_container textarea {
+  resize: vertical; /* Permite redimensionar solo hacia abajo */
+  min-height: 100px;
+}
+
+/* Efecto focus al seleccionar el input */
+.input_container input:focus,
+.input_container textarea:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.enviar_boton {
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: #00ffff;
+  margin-top: 10px;
+  border: 1px solid rgb(0, 115, 255);
+  font-size: var(--p_tamanio);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Espacio entre el texto y el icono del botón */
+}
+
+.enviar_boton:hover {
+  background-color: rgba(0, 115, 255, 0.1);
+}
+
+/*Aquí agregué los estilos para la sección de descarga de CV y visualización de GitHub */
+.form_cv {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.form_cv .enviar_boton {
+  flex: 1;
+}
+
+/* FIN DE LA CORRECCIÓN */
 
 .contact_footer {
-    display: flex;
-    color: #00ffd5;
-    justify-content: center;
+  margin-top: 15px;
+  display: flex;
+  color: #00ffd5;
+  justify-content: center;
 }
-
-
-
-
-

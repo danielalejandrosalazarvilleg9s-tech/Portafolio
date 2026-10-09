@@ -1,22 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio personal de Daniel Alejandro Salazar Villegas, practicando HTML, CSS y Vanilla Javascript">
-    <meta name="author" content="Daniel Alejandro Salazar Villegas">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de Daniel Alejandro Salazar Villegas, practicando HTML, CSS y Vanilla Javascript"
+    />
+    <meta name="author" content="Daniel Alejandro Salazar Villegas" />
     <title>Portafolio</title>
-    
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="src/favicon.png">   
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="src/favicon.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
-
+  <body>
     <!-- Navbar
     Projects
     Skills
@@ -24,215 +33,227 @@
     Contact -->
 
     <section class="navbar">
+      <section class="navbar_logo">
+        <img
+          src="src/Logo_Negativo.png"
+          alt="Logo de Daniel Alejandro Salazar Villegas"
+        />
+      </section>
+      <!-- <button class="menu_boton"><img src="/src/menu.png" alt="logo_navbar"></button> -->
+      <i id="menu_boton" class="bx bx-menu"></i>
 
-        <section class="navbar_logo">
-            <img src="src/Logo_Negativo.png"
-                alt="Logo de Daniel Alejandro Salazar Villegas">
-        </section>
-        <!-- <button class="menu_boton"><img src="/src/menu.png" alt="logo_navbar"></button> -->
-         <i id="menu_boton" class='bx bx-menu'></i>
-         
-        <section class="navbar_list">
-            <ul class="navbarlist-ul">
-                <li class="navbar_list-item">
-                    <a href="#Home">Home</a>
-                </li>
-                
-                <li class="navbar_list-item">
-                    <a href="#About_id">About</a>
-                </li>
+      <section class="navbar_list">
+        <ul class="navbarlist-ul">
+          <li class="navbar_list-item">
+            <a href="#Home">Home</a>
+          </li>
 
-                <li class="navbar_list-item">
-                    <a href="#Projects">Projects</a>
-                </li>
+          <li class="navbar_list-item">
+            <a href="#About_id">About</a>
+          </li>
 
-                <li class="navbar_list-item">
-                    <a href="#Skills_id">Skills</a>
-                </li>
+          <li class="navbar_list-item">
+            <a href="#Projects">Projects</a>
+          </li>
 
-                <!-- !PENDIENTE! Este contenido se va a realizar como un modal.
+          <li class="navbar_list-item">
+            <a href="#Skills_id">Skills</a>
+          </li>
+
+          <!-- !PENDIENTE! Este contenido se va a realizar como un modal.
                 Al dar clic se atenuara la plantalla con un blur
                 Se mostrara una ventana con un color de acuerdo al tema de la pagina
                 NO SE COLOCARA INFORMACION SENSIBLE, COMO: Identificaciones, Numero
                 de telefono ni direcciones personales -->
 
-                <li class="navbar_list-item">
-                    <a href="#Contact" id="openContact">Contact</a>
-                </li>
-
-            </ul>
-        </section>
+          <li class="navbar_list-item">
+            <a href="#Contact" id="openContact">Contact</a>
+          </li>
+        </ul>
+      </section>
     </section>
     <section id="Home">
-        <section class="hero">
-        
-            <section class="hero_texto">
-
-                <h1 class="hero_imagen-titulo">Frontend Developer</h1>
-                <p class="hero_imagen-parrafo">I create solid, useful websites with an SEO focus on web accessibility.</p>
-                <div class="hero_imagen_">
-                    <img class="imagen_hero" src="src/DanielFoto_real.avif">
-                </div>
-                <!-- <section class="hero_texto">
-                </section> -->    
-            </section>
+      <section class="hero">
+        <section class="hero_texto">
+          <h1 class="hero_imagen-titulo">Frontend Developer</h1>
+          <p class="hero_imagen-parrafo">
+            I create solid, useful websites with an SEO focus on web
+            accessibility.
+          </p>
+          <div class="hero_imagen_">
+            <img class="imagen_hero" src="src/DanielFoto_real.avif" />
+          </div>
+          <!-- <section class="hero_texto">
+                </section> -->
         </section>
+      </section>
     </section>
-    
+
     <section class="about" id="About_id">
-        <h3 class="Projects_title about">About</h3>
-        <div class="projects_cards-card about_text">
-            <p class="about_text-parrafo">
-                Hola!, Soy Daniel Alejandro Salazar Villegas, un apasionado por Dios y la programación; estoy aprendiendo Python, HTML, CSS; Estoy aprendiendo a manejar Git y Github, y quiero ser especialista en Backend
-            </p>
-        </div>
+      <h3 class="Projects_title about">About</h3>
+      <div class="projects_cards-card about_text">
+        <p class="about_text-parrafo">
+          Hola!, Soy Daniel Alejandro Salazar Villegas, un apasionado por Dios y
+          la programación; estoy aprendiendo Python, HTML, CSS; Estoy
+          aprendiendo a manejar Git y Github, y quiero ser especialista en
+          Backend
+        </p>
+      </div>
     </section>
 
     <section id="Projects">
+      <section class="projects_cards">
+        <!-- titulo Projects -->
+        <h3 class="Projects_title">Projects</h3>
+        <!-- Tarjeta 1 -->
+        <div class="projects_cards-card">
+          <img
+            src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Calculadora en Python"
+          />
+          <h3 class="titulo">Calculadora en Python</h3>
+          <p class="projects_cards-card--parrafo">
+            Calculadora desarrollada en Python para realizar operaciones
+            matemáticas básicas.
+          </p>
 
-        <section class="projects_cards">
+          <a class="btn-project" href="#">Ver proyecto</a>
+        </div>
 
-            <!-- titulo Projects -->
-             <h3 class="Projects_title">Projects</h3>
-            <!-- Tarjeta 1 -->
-            <div class="projects_cards-card">
-                <img src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calculadora en Python">
-                <h3 class="titulo">Calculadora en Python</h3>
-                <p class="projects_cards-card--parrafo">
-                    Calculadora desarrollada en Python para realizar
-                    operaciones matemáticas básicas.
-                </p>
-                
-                <a class="btn-project" href="#">Ver proyecto</a> 
-                
-            </div>
-        
-            <!-- Tarjeta 2 -->
-            <div class="projects_cards-card">
-                <img src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calculadora en Python">
-                <h3 class="titulo">Triki</h3>
-                <p class="projects_cards-card--parrafo">
-                    Juego del triki desarrollado en Python, donde juega el usuario contra la computadora, y el primero en hacer una línea de 3 gana.
-                </p>
+        <!-- Tarjeta 2 -->
+        <div class="projects_cards-card">
+          <img
+            src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Calculadora en Python"
+          />
+          <h3 class="titulo">Triki</h3>
+          <p class="projects_cards-card--parrafo">
+            Juego del triki desarrollado en Python, donde juega el usuario
+            contra la computadora, y el primero en hacer una línea de 3 gana.
+          </p>
 
-                <a class="btn-project" href="#">Ver proyecto</a> 
-            </div>
-           
-            <!-- Tarjeta 3 -->
-            <div class="projects_cards-card">
-                <img src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Calculadora en Python">
-                <h3 class="titulo">Calculadora en Python</h3>
-                <p class="projects_cards-card--parrafo">
-                    Calculadora desarrollada en Python para realizar
-                    operaciones matemáticas básicas.
-                </p>
+          <a class="btn-project" href="#">Ver proyecto</a>
+        </div>
 
-                <a class="btn-project" href="#">Ver proyecto</a> 
-            </div>
-            
-        </section>
+        <!-- Tarjeta 3 -->
+        <div class="projects_cards-card">
+          <img
+            src="https://images.unsplash.com/photo-1631511258193-252ab3da6b8b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Calculadora en Python"
+          />
+          <h3 class="titulo">Calculadora en Python</h3>
+          <p class="projects_cards-card--parrafo">
+            Calculadora desarrollada en Python para realizar operaciones
+            matemáticas básicas.
+          </p>
+
+          <a class="btn-project" href="#">Ver proyecto</a>
+        </div>
+      </section>
     </section>
 
     <section class="skills" id="Skills_id">
-        <!-- titulo Skills -->
-        <h3 class="Projects_title skills">Skills</h3>
-        <!-- Tarjeta 1 -->
-        <div class="projects_cards-card skills_text">  
-            <span class="skills_text-span">
-                Python
-            </span>
+      <!-- titulo Skills -->
+      <h3 class="Projects_title skills">Skills</h3>
+      <!-- Tarjeta 1 -->
+      <div class="projects_cards-card skills_text">
+        <span class="skills_text-span"> Python </span>
 
-            <span class="skills_text-span">
-                Css3  
-            </span>
-            <span class="skills_text-span">
-                Html5
-            </span>
-            <span class="skills_text-span">
-                Git
-            </span>
-        </div>
-    </section> 
-
+        <span class="skills_text-span"> Css3 </span>
+        <span class="skills_text-span"> Html5 </span>
+        <span class="skills_text-span"> Git </span>
+      </div>
+    </section>
 
     <section class="contact" id="Contact">
-        
-        <div class="Contact_ventana_modal">
+      <div class="Contact_ventana_modal">
+        <!-- Es mejor poner el botón de cerrar arriba en la estructura -->
+        <button
+          class="contact_button_cerrar"
+          id="closeContact"
+          aria-label="Cerrar modal"
+        >
+          <i class="bx bx-x"></i>
+        </button>
 
-            <h4>CONTACTO ----</h4>
-            
-            <h3 class="Projects_title title_contact">
-                Hable<span>mos</span>
-            </h3>
+        <h4>CONTACTO</h4>
 
-            <p class="contact_subtitle">
-                ¿Tienes un proyecto en mente?<br>
-                Me encantaría saber de ti.<br>
-                ¡Será un gusto ayudarte!
-            </p>
+        <h3 class="Projects_title title_contact">Hablemos</h3>
 
-            <div class="projects_cards-card card_input">
-                <form>
-                    <label for="name">
-                        <i class='bx bx-user form_user'></i> 
-                        Nombre
-                    </label>
-                    <input type="text" id="name" placeholder="Daniel Salazar Villegas">
-                </form>
+        <p class="contact_subtitle">
+          ¿Tienes un proyecto en mente?<br />
+          Me encantaría saber de ti.<br />
+          ¡Será un gusto ayudarte!
+        </p>
+
+        <!-- Danie, aquí tenías varios errores, siempre es mejor tener un solo formulario envolviendo todo -->
+        <form id="contactForm" action="#" method="POST">
+          <div class="card_input">
+            <label for="name">Nombre</label>
+            <div class="input_container">
+              <i class="bx bx-user form_icon"></i>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="¿Quién eres?"
+                required
+              />
             </div>
-            
-            <div class="projects_cards-card card_input">
-                <form>
+          </div>
 
-                <label for="email">
-                    <i class='bx bx-envelope form_email'></i> 
-                    Email
-                </label>
-
-                <input type="email" id="email" placeholder="danvilsa@ejemplo.com">
-                </form>
+          <div class="card_input">
+            <label for="email">Email</label>
+            <div class="input_container">
+              <i class="bx bx-envelope form_icon"></i>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tuCorreo@ejemplo.com"
+                required
+              />
             </div>
+          </div>
 
-            <div class="projects_cards-card card_input">
-                <form>
-                    <label for="message">
-                        <i class="bx bx-message-rounded form_mensaje"></i>
-                            Mensaje
-                        
-                    </label>
-
-                    <textarea id="message" placeholder="Hola, me gustaria saber mas sobre tu trabajo"></textarea>
-
-                </form>
+          <div class="card_input">
+            <label for="message">Mensaje</label>
+            <div class="input_container">
+              <i class="bx bx-message-rounded form_icon textarea_icon"></i>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Hola, me gustaría saber más sobre tu trabajo"
+                required
+              ></textarea>
             </div>
+          </div>
 
+          <!-- /*Esta sección la agregué para que la persona pueda descargar su CV o
+          ver tu perfil de GitHub */ -->
 
-                <button class="enviar_boton"  type="submit">
-                    <i class='bx bx-send boton_enviar'></i>
-                    Enviar
+          <div class="form_cv">
+            <button class="enviar_boton" type="button" id="downloadCV">
+              <i class="bx bx-download boton_enviar"></i>
+              Descargar CV
+            </button>
+            <button class="enviar_boton" type="button" id="github">
+              <i class="bx bxl-github boton_enviar"></i>
+              Visita mi GitHub
+            </button>
+          </div>
 
-                </button>
+          <button class="enviar_boton" type="submit">
+            <i class="bx bx-send boton_enviar"></i>
+            Enviar
+          </button>
+        </form>
 
-                <p class="contact_footer">
-                    ───　¡GRACIAS POR TU MENSAJE!　───
-                </p>
-
-                <button class="contact_button_cerrar" id="closeContact">
-                    <i class='bx bx-x'></i>
-                </button>
-
-            </form>
-
-            
-        </div>
+        <p class="contact_footer">─── ¡GRACIAS POR TU MENSAJE! ───</p>
+      </div>
     </section>
     <!-- investigar como el contenido heigth se ajuste dependiendo a la cantidad que tenga dentro -->
+  </body>
 
-
-</body>
-
-<script src="scripts.js"></script>
- 
+  <script src="scripts.js"></script>
 </html>
-
-    
