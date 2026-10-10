@@ -41,9 +41,11 @@ svg {
 }
 input,
 button,
-textarea,
 select {
   font: inherit;
+}
+textarea {
+  
 }
 
 .navbar {
@@ -259,6 +261,8 @@ select {
 /* ***** Contact Section *****/
 
 .contact {
+  width: 100%;
+  height: 100%;
   display: none;
   position: fixed;
   top: 0;
@@ -280,8 +284,10 @@ select {
 .Contact_ventana_modal {
   position: relative;
   border: 4px solid rgb(91, 165, 255);
-  width: 450px;
+  width: auto;
+  max-width: 95%;
   height: auto;
+  max-height: 95%;
   background-color: var(--bg_principal);
   box-shadow:
     #7831fc 0px 0px 30px,
@@ -289,69 +295,11 @@ select {
   border-radius: 15px;
   padding: 20px;
   margin: 0 10px;
+    overflow-y: scroll;
+
 }
 
-/* 
 
-.card_input {
-  position: relative; corregido - revisa el porqué
-  width: 100%;
-  height: 70%;
-  transition: none;
-}
-.card_input:hover {
-  transform: none;
-}
-
-.card_input input {
-  padding: 12px 0 12px 50px;
-  margin-bottom: 15px;
-  font-size: var(--p_tamanio);
-  color: aliceblue;
-}
-
-.card_input textarea {
-  padding: 12px 0 12px 50px;
-  margin-bottom: 15px;
-  outline: none;
-  font-size: var(--p_tamanio);
-  color: aliceblue;
-}
-
-.form_user {
-  position: absolute;
-  margin-left: 15px;
-  top: 49%;
-  z-index: 6;
-  font-size: 20px;
-  border-radius: 50px;
-}
-
-.form_email {
-  position: absolute;
-  margin-left: 15px;
-  top: 50%;
-  z-index: 6;
-  font-size: 20px;
-}
-
-.form_mensaje {
-  position: absolute;
-  margin-left: 15px;
-  top: 42%;
-  z-index: 6;
-  font-size: 20px;
-}
-
-.enviar_boton {
-  background-color: transparent;
-  border-radius: 10px;
-  padding: 0 5px 0 5px;
-  color: #00ffff;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  border: 1px solid rgb(0, 115, 255);
-} */
 
 /* --- ESTILOS CORREGIDOS DEL FORMULARIO DE CONTACTO --- */
 .line_contact {
@@ -394,8 +342,8 @@ select {
 
 .contact_button_cerrar {
   display: flex;
-  top: -50px;
-  right: -3px;
+  top: 8px;
+  right: 8px;
   position: absolute;
   font-size: 1.5rem;
   justify-content: center;
@@ -407,6 +355,7 @@ select {
   padding: 6px;
   cursor: pointer;
   width: auto;
+  margin: 5px;
 }
 
 .title_contact {
@@ -422,7 +371,7 @@ select {
 .Contact_ventana_modal form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 5px;
 }
 
 /* Contenedor principal de cada campo */
@@ -474,7 +423,7 @@ select {
 }
 
 .input_container textarea {
-  resize: vertical; /* Permite redimensionar solo hacia abajo */
+  resize: none; /* Permite redimensionar solo hacia abajo */
   min-height: 100px;
 }
 
@@ -488,7 +437,7 @@ select {
 .enviar_boton {
   background-color: transparent;
   border-radius: 25px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   color: #00ffff;
   margin-top: 10px;
   border: 1px solid rgb(0, 115, 255);
@@ -498,7 +447,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* Espacio entre el texto y el icono del botón */
+  gap: 5px; /* Espacio entre el texto y el icono del botón */
 }
 
 .enviar_boton:hover {
@@ -511,7 +460,7 @@ select {
   justify-content: space-between;
   align-items: stretch;
   gap: 10px;
-  margin-top: 15px;
+  
 }
 
 .form_cv .enviar_boton {
