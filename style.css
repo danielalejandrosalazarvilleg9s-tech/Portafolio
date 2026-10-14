@@ -227,6 +227,7 @@ select {
   gap: 10px;
   justify-content: flex-start;
   height: auto;
+  transform: none;
 }
 .skills {
   display: inline-block;
