@@ -451,6 +451,7 @@ select {
   justify-content: center;
   align-items: center;
   gap: 5px; /* Espacio entre el texto y el icono del botón */
+  text-decoration: none;
 }
 
 .enviar_boton:hover {
