@@ -125,18 +125,23 @@ select {
   height: 250px;
   object-fit: cover;
   transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+  transform scale(1.0099);
+  box-shadow:
+  -5px 5px 15px #00ffff,
+  0 0 15px #ff00ff,
+  5px -5px 15px #7831fc;
+  z-index: 4;
+  
 }
 
-.imagen_hero:hover {
+/* .imagen_hero:hover {
   transform: scale(1.0099);
   box-shadow:
     -5px 5px 15px #00ffff,
     0 0 15px #ff00ff,
     5px -5px 15px #7831fc;
   z-index: 4;
-}
+} */
 .hero_texto {
   flex-direction: column;
 }
