@@ -22,12 +22,11 @@ html {
 }
 body {
   line-height: 1.6;
-  -webkit-font-smoothing: antialiased; /* Suaviza las fuentes en Mac/iOS */
+  -webkit-font-smoothing: antialiased;
   font-family:
     Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, system-ui,
-    sans-serif; /* Fuente por defecto moderna */
-  max-width: 100vw;
-  /* min-width: 480px;  */
+    sans-serif;
+  overflow-x: clip;
   background-color: var(--bg_principal);
   margin: 15px;
 }
@@ -51,6 +50,7 @@ select {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  
 }
 .navbar_list {
   display: none;
@@ -72,12 +72,14 @@ select {
 .navbar_list-item {
   display: flex;
   justify-content: flex-end;
+  
 }
 .navbar_list-item a {
   font-size: var(--nb-txt-md);
   color: var(--nb-text_color);
   text-decoration: none;
   font-weight: bold;
+  
 }
 .navbar_list-item a:hover {
   color: white;
@@ -108,14 +110,27 @@ select {
 .hero_imagen_ {
   margin: 20px;
 }
+
 .hero_imagen-titulo {
-  color: #fff;
-  font-size: var(--txt-giant);
+  color: #75cfff;
+  font-family: "Bebas Neue", "Montserrat", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  margin-bottom: 10px;
 }
+
 .hero_imagen-parrafo {
-  color: rgb(7, 192, 183);
-  font-size: 1.2rem;
+  color: #b8c7e0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 36ch;
+  margin: 0 auto;
 }
+
 
 .imagen_hero {
   display: block;
@@ -134,14 +149,6 @@ select {
   
 }
 
-/* .imagen_hero:hover {
-  transform: scale(1.0099);
-  box-shadow:
-    -5px 5px 15px #00ffff,
-    0 0 15px #ff00ff,
-    5px -5px 15px #7831fc;
-  z-index: 4;
-} */
 .hero_texto {
   flex-direction: column;
 }
@@ -168,16 +175,17 @@ select {
 .projects_cards {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 16px;
 }
 .projects_cards-card {
   width: 100%;
-  height: auto;
+  height: 100%;
   /* background-color: #5a25a3; */
   border: 1px solid rgb(0, 115, 255);
   border-radius: 15px;
   margin: 8px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
   align-content: center;
@@ -195,15 +203,19 @@ select {
 
 .projects_cards-card img {
   width: 100%;
-  height: 60%;
+  aspect-ratio: 16 / 10;
+  height: auto;
   object-fit: cover;
   border-radius: 15px;
+  margin-bottom: 10px;
+
 }
 
 .projects_cards-card--parrafo {
   color: lightblue;
   font-size: var(--p_tamanio);
   text-align: start;
+  margin-bottom: 12px;
 }
 .btn-project {
   color: #00ffff;
@@ -212,8 +224,9 @@ select {
   font-size: 13px;
   border: 1px solid rgb(0, 115, 255);
   border-radius: 15px;
-  padding: 6px;
+  padding: 6px 12px; 
   transition: ease-in-out 0.2s;
+  margin-top: auto;
 }
 .btn-project:hover {
   color: var(--bg_principal);
@@ -278,7 +291,7 @@ select {
   -webkit-backdrop-filter: blur(10px);
   justify-content: center;
   align-items: center;
-  z-index: 5;
+  z-index: 200;
 }
 
 .contact.active {
@@ -451,6 +464,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 44px;
   gap: 5px; /* Espacio entre el texto y el icono del botón */
   text-decoration: none;
 }
@@ -480,3 +494,146 @@ select {
   color: #00ffd5;
   justify-content: center;
 }
+
+
+/* Section media queries for responsive design */
+
+@media (min-width: 768px) {
+
+
+
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    align-items: center;
+    padding: 10px 15%;
+    background-color: rgba(1, 0, 25, 0.75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+  }
+
+.navbar_logo {
+    margin: 0;
+  }
+  .navbar_list {
+    display: flex;
+    padding: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .navbar_list ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .navbar_list li {
+    margin-bottom: 0;
+  }
+
+  #menu_boton {
+    display: none;
+  }
+
+  .hero_imagen-titulo {
+    font-size: 4rem;
+    color: #75cfff;
+    
+  }
+  
+
+  .hero_imagen-parrafo {
+    font-size: 1.1rem;
+    margin: 0;
+  } 
+  
+  .imagen_hero  {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px; 
+    
+  }
+
+  .hero_about {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);           
+    flex-direction: row;       
+    gap: 20px;                 
+    padding: 20px;
+    text-align: justify;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .hero_all { 
+    text-align: left;
+
+  }
+
+  .about {
+    display: 1;
+  }
+
+  .about_text {
+    width: 90%;
+  }
+
+
+  ._about {
+    text-align: end;
+  }
+
+  .about_text-parrafo {
+    font-size: 1.2rem;
+  }
+  
+  .Projects_title {
+    margin: 0 15%;
+  }
+
+  .projects_cards {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 40px;
+  }
+
+
+.skills_text{
+  margin: 0 15%;
+  display: flex;
+  width: auto;
+}
+  ._skills {
+    margin: 0 15%;
+  }
+
+  /* contenido escencial modal */
+
+
+.Contact_ventana_modal {
+    width: 550px;
+    max-width: 90vw;
+    max-height: 90dvh;
+    overflow-y: auto;
+  }
+
+.title_contact {
+  text-align: center;
+}
+
+.contact_subtitle {
+  text-align: center;
+}
+
+} 
+
+
