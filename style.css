@@ -96,9 +96,15 @@ select {
   width: 70px;
 }
 #menu_boton {
-  color: antiquewhite;
+
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: white;
   font-size: 4rem;
   cursor: pointer;
+  line-height: 1;
+
 }
 .hero {
   display: flex;
