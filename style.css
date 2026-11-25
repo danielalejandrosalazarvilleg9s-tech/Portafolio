@@ -50,6 +50,7 @@ select {
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 20px;
   
 }
 .navbar_list {
@@ -58,6 +59,7 @@ select {
   background-color: #04001682;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+
 }
 
 .navbar_list.active {
@@ -120,11 +122,13 @@ select {
 .hero_imagen-titulo {
   color: #75cfff;
   font-family: "Bebas Neue", "Montserrat", sans-serif;
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.05;
   margin-bottom: 10px;
+  margin-top: 20px;
+
 }
 
 .hero_imagen-parrafo {
